@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Flex</title>
+
+  <!-- Bootstrap & CSS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .navbar {
+      background-color: #000000a1 !important;
+      border-bottom: 2px solid #000;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+      color: #fff;
+    }
+
+    .navbar-nav .nav-item .nav-link.active {
+      border-top: 2px solid #000;
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .navbar-toggler {
+        color: #fff;
+      }
+    }
+
+    /* Additional Styling for Contact Section */
+    #contact {
+      border: 2px solid #000;
+      margin-top: -20px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">Gym Flex</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home" onclick="setActive(this)">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" onclick="setActive(this)">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#trainer" onclick="setActive(this)">Trainer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#membership" onclick="setActive(this)">Membership</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#classes" onclick="setActive(this)">Classes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" onclick="setActive(this)">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#signin" onclick="setActive(this)">Sign In</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+<!-- Home Section -->
+<section id="home" class="container mt-5">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-12">
+          <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gym Image 1" class="img-fluid mb-2">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h2>Welcome to Gym Flex!</h2>
+      <p>
+        Elevate your fitness journey with Gym Flex - your ultimate destination for health and wellness. Our state-of-the-art facilities and expert trainers are here to guide you on a path to a healthier, stronger, and more confident you.
+      </p>
+      <p>
+        At Gym Flex, we believe in the power of a supportive community. Join us in a variety of fitness classes, from high-intensity workouts to mindful practices. No matter your fitness level, we have a program designed just for you.
+      </p>
+      <a href="#classes" class="btn btn-primary">Explore Classes</a>
+    </div>
+    
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="container mt-5">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>About Gym Flex</h2>
+      <p>
+        Gym Flex is more than just a fitness center; it's a lifestyle. Our mission is to empower individuals to achieve their fitness goals, enhance their well-being, and embrace a healthier way of living.
+      </p>
+      <p>
+        With a team of experienced trainers and a welcoming community, Gym Flex provides a range of programs to cater to various fitness levels and interests. From strength training to yoga, we're committed to supporting your fitness journey every step of the way.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <img src="https://images.unsplash.com/photo-1570829460005-c840387bb1ca?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="About Gym Image" class="img-fluid">
+    </div>
+  </div>
+</section>
+
+<!-- Trainer Section -->
+<section id="trainer" class="container mt-5">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Our Trainers</h2>
+      <p>
+        Meet our dedicated team of certified trainers who are passionate about helping you achieve your fitness goals. Each trainer brings a unique set of skills and expertise to cater to different workout preferences and needs.
+      </p>
+      <!-- Add information about each trainer -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1611672585731-fa10603fb9e0?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Trainer 1">
+        <div class="card-body">
+          <h5 class="card-title">John Doe</h5>
+          <p class="card-text">Certified Personal Trainer</p>
+        </div>
+      </div>
+      <div class="card mt-3">
+        <img src="https://images.unsplash.com/photo-1584952811565-c4c4031805a8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Trainer 2">
+        <div class="card-body">
+          <h5 class="card-title">Jack Smith</h5>
+          <p class="card-text">Yoga Instructor</p>
+        </div>
+      </div>
+      <!-- Add more trainers as needed -->
+    </div>
+    <div class="col-md-6">
+      <!-- Add images or additional content if needed -->
+    </div>
+  </div>
+</section>
+
+<!-- Membership Section -->
+<section id="membership" class="container mt-5">
+  <h2>Membership Plans</h2>
+
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Standard Membership</h3>
+      <p>Price: $50/month</p>
+      <p>Access to gym facilities</p>
+      <p>Discounts on fitness classes</p>
+      <p>24/7 gym access</p>
+      <p>Personalized workout plans</p>
+    </div>
+
+    <div class="col-md-6">
+      <h3>Premium Membership</h3>
+      <p>Price: $80/month</p>
+      <p>Unlimited access to all facilities</p>
+      <p>Free fitness classes</p>
+      <p>Priority scheduling with personal trainers</p>
+      <p>Exclusive member events</p>
+    </div>
+
+    <!-- Add more membership plans as needed -->
+
+  </div>
+
+  <p>Ready to join? <a href="#">Sign Up Now</a></p>
+</section>
+
+<!-- Classes Section -->
+<section id="classes" class="container mt-5">
+  <h2>Our Classes</h2>
+  <p>Explore a variety of classes designed to meet different fitness preferences and levels. From high-energy cardio sessions to mindful yoga practices, we have something for everyone.</p>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Class 1">
+        <div class="card-body">
+          <h5 class="card-title">High-Intensity Interval Training (HIIT)</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1399&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Class 2">
+        <div class="card-body">
+          <h5 class="card-title">Yoga and Meditation</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1557127972-1c446ea89ea5?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Class 3">
+        <div class="card-body">
+          <h5 class="card-title">Strength Training</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Add more classes as needed -->
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container mt-5">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Contact Us</h2>
+      <p>
+        Have questions or ready to get started on your fitness journey? Reach out to us! Our team is here to assist you.
+      </p>
+      <ul>
+        <li>Email: info@gymflex.com</li>
+        <li>Phone: +1 (555) 123-4567</li>
+        <li>Address: 123 Fitness Street</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <form>
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email:</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message:</label>
+          <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Sign In Section -->
+<section id="signin" class="container mt-5">
+  <h2>Sign In</h2>
+  <form>
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" class="form-control" id="username" name="username" required>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" class="form-control" id="password" name="password" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Sign In</button>
+  </form>
+  <p>Don't have an account? <a href="#">Sign Up</a></p>
+</section>
+
+<script>
+  function setActive(link) {
+    document.querySelectorAll('.navbar-nav a').forEach(function(el) {
+      el.classList.remove('active');
+    });
+    link.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
